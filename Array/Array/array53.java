@@ -1,0 +1,52 @@
+package Array;
+
+import java.util.Scanner;
+
+/**
+ * Created by Maqsud-PC on 03.11.2015.
+ */
+public class array53 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Massivlar o'lchamini kiriting:");
+        System.out.print("n = ");
+        int n = sc.nextInt();
+        float[] a = new float[n];
+        float[] b = new float[n];
+        float[] c = new float[n];
+
+        System.out.println("\na -  massiv elementlarini kiriting:");
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextFloat();
+        }
+
+        System.out.println("\nb -  massiv elementlarini kiriting:");
+        for (int i = 0; i < n; i++) {
+            b[i] = sc.nextFloat();
+        }
+
+        System.out.println("\nHosil bo'lgan a -  massiv ko'rinishi");
+        for (int i = 0; i < n; i++) {
+            System.out.print(a[i] + "  ");
+        }
+
+        System.out.println("\nHosil bo'lgan b -  massiv ko'rinishi");
+        for (int i = 0; i < n; i++) {
+            System.out.print(b[i] + "  ");
+        }
+
+        System.out.println("");
+
+        for (int i = 0; i < n; i++) {
+           c[i] = (a[i] >= b[i]) ? a[i] : b[i];
+        }
+
+        System.out.println("");
+        System.out.println("Natija");
+        System.out.println("\nc - massiv ko'rinishi");
+        for (int i = 0; i < n; i++) {
+            System.out.print(c[i] + "  ");
+        }
+    }
+}
